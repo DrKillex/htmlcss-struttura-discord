@@ -8,7 +8,7 @@
 
 /* debug */
 
-.debug .flex {
+.debug nav.flex {
     background-color: orange;
 }
 
@@ -25,8 +25,24 @@
 }
 
 .debug .container-banner div {
-    background-color: pink;
+    background-color: #d43be2;
     height: 300px;
+}
+
+.debug .big-box {
+    background-color: #1276d4;
+}
+
+.debug .small-box {
+    background-color: pink;
+}
+
+.debug .huge-box {
+    background-color: green;
+}
+
+.debug main div.container-section-main:nth-child(even) {
+    background-color: gray;
 }
 
 /* body */
@@ -34,9 +50,17 @@
 
 /* header */
 
+.nav-container {
+    padding: 10px 0;
+}
+
 nav {
     justify-content: space-between;
+    margin: 0 auto;
+    width: 65%;
 }
+
+
 
 nav div:last-child {
     text-align: end;
@@ -57,7 +81,7 @@ ul.flex {
     width: 20%;
 }
 
-.nav-container, ul.flex li, .flex >div {
+ul.flex li, .flex >div {
     padding: 10px;
 }
 
@@ -66,7 +90,9 @@ ul.flex {
 }
 
 .container-banner div {
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
 }
+
+/* main */
 
