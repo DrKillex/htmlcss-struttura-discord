@@ -12,18 +12,27 @@
     background-color: orange;
 }
 
-.debug header {
+.debug .nav-container {
     background-color: aquamarine;
+}
+
+.debug .dashed {
+    border: 2px dashed black;
+}
+
+.debug .container-banner {
+    background-color: blue;
+}
+
+.debug .container-banner div {
+    background-color: pink;
+    height: 300px;
 }
 
 /* body */
 
 
 /* header */
-
-header {
-    padding: 10px;
-}
 
 nav {
     justify-content: space-between;
@@ -48,10 +57,16 @@ ul.flex {
     width: 20%;
 }
 
-ul.flex li, .flex >div {
+.nav-container, ul.flex li, .flex >div {
     padding: 10px;
 }
 
-.flex >div, ul.flex {
-    border: 1px dashed black;
+.container-banner {
+    padding: 40px 0;
 }
+
+.container-banner div {
+    width: 60%;
+    margin: 0 auto;
+}
+
