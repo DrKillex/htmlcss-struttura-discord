@@ -7,3 +7,51 @@
 }
 
 /* debug */
+
+.debug .flex {
+    background-color: orange;
+}
+
+.debug header {
+    background-color: aquamarine;
+}
+
+/* body */
+
+
+/* header */
+
+header {
+    padding: 10px;
+}
+
+nav {
+    justify-content: space-between;
+}
+
+nav div:last-child {
+    text-align: end;
+}
+
+
+.flex {
+    display: flex;
+}
+
+ul.flex {
+    list-style-type: none;
+    width: 60%;
+    justify-content: center;
+}
+
+.flex >div {
+    width: 20%;
+}
+
+ul.flex li, .flex >div {
+    padding: 10px;
+}
+
+.flex >div, ul.flex {
+    border: 1px dashed black;
+}
