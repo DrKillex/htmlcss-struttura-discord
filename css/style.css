@@ -26,7 +26,7 @@
 
 .debug .container-banner div {
     background-color: #d43be2;
-    height: 300px;
+
 }
 
 .debug .big-box {
@@ -41,7 +41,7 @@
     background-color: green;
 }
 
-.debug main div.container-section-main {
+.debug main div.container-section-main, .section-footer, .container-banner {
     height: 400px;
 }
 
@@ -51,6 +51,27 @@
 
 .debug main div.bg-main:nth-child(even) {
     background-color: gray;
+}
+
+.debug footer {
+    background-color: black;
+}
+
+.debug .pie-pagina {
+    background-color: aqua;
+}
+
+.debug .pie-pagina > .dashed {
+    background-color: pink;
+}
+
+.debug .col-small {
+    border: 2px dashed white;
+    background-color: aqua;
+}
+
+.debug .col-big {
+    background-color: coral;
 }
 
 /* body */
@@ -89,18 +110,20 @@ header .flex >div {
     width: 20%;
 }
 
-ul.flex li, .flex >div {
-    padding: 10px;
+ul.flex li, header .flex > div, footer .flex > div  {
+    padding: 5px;
 }
 
 .container-banner {
     padding: 40px 0;
 }
 
-.container-banner div {
+header div.container-banner > div.dashed {
     width: 50%;
     margin: 0 auto;
 }
+
+
 
 /* main */
 
@@ -121,3 +144,27 @@ ul.flex li, .flex >div {
     width: 30%;
 }
 
+/* footer */
+
+.pie-pagina, .section-footer {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.pie-pagina {
+    justify-content: space-between;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+.section-footer {
+    padding: 10px 0 40px 0;
+}
+
+.col-small {
+    flex-grow: 1;
+}
+
+.col-big {
+    flex-grow: 1.5;
+}
